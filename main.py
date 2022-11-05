@@ -4,7 +4,6 @@ import requests
 from bs4 import BeautifulSoup as bs
 import time
 
-
 with open("config.json") as f:
     cfg = json.load(f)
 
@@ -37,19 +36,10 @@ def control_data_flow(dictionary,N,timelapse):
         time.sleep(timelapse)
         n += 1
 
-    
-
 if __name__ == "__main__":
 
     start = time.time()
-    
-    
     d = create_dictionary()
-
     control_data_flow(d,5,1)
-    
-    
-        
     end = time.time()
-    
     print(f"EXECUTION TIME : {end-start}")
