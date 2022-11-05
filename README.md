@@ -12,3 +12,6 @@ source env/bin/activate
 
 ## Running the script
 
+```
+python main.py
+```
